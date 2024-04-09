@@ -6,8 +6,8 @@ from .constants import Constants
 from .views import PostViewSet, GroupViewSet, CommentViewSet
 
 router = DefaultRouter()
-router.register(r'posts', PostViewSet)
-router.register(r'groups', GroupViewSet)
+router.register('posts', PostViewSet)
+router.register('groups', GroupViewSet)
 router.register(r'posts/(?P<post_id>\d+)/comments', CommentViewSet)
 
 urlpatterns = [
